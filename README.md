@@ -2,6 +2,8 @@
 
 This project is aimed at providing commonly used code snippets for Django to developers for faster development
 
+![Django Snippets](./static/django-snippet.gif)
+
 ## Features
 
 Code Snippets for Django
@@ -11,18 +13,20 @@ Code Snippets for Django
 3. Queryset API
 4. Class Based View
 5. Function Based View
+6. User Model
 
 ## Known Issues
 
-Currently no issue has been reported
+Currently no issue has been reported. All issues must be reported at 
+
+[Issues](https://github.com/Sid200026/Django-Snippets-VSCode/issues)
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
+#### First Release of the django-snippets extension
 
-Initial release of with Snippets for Django
+Initial release of snippets for Django
 
 -----------------------------------------------------------------------------------------------------------
 
