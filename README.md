@@ -1,6 +1,9 @@
 # django-snippets README
 
-This project is aimed at providing commonly used code snippets for Django to developers for faster development
+This project is aimed at providing commonly used code snippets for Django to developers for faster development.
+
+### The documentation for the code snippets can be found at [Reference](REFERENCE.md) or the REFERENCE.md file.
+
 
 ![Django Snippets](./static/django-snippet.gif)
 
