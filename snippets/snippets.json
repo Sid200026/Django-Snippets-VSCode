@@ -393,5 +393,100 @@
             "   ${0}"
         ],
         "description" : "Custom Filter"
+    },
+    "Create API" : {
+        "prefix" : "create",
+        "body" : [
+            "${1:Variable} = ${2:ModelName}.objects.create(${3:PassArguments})",
+            "${0}"
+        ],
+        "description" : "Create API"
+    },
+    "All API" : {
+        "prefix" : "all",
+        "body" : [
+            "${1:Variable} = ${2:ModelName}.objects.all()",
+            "${0}"
+        ],
+        "description" : "All API"
+    },
+    "Filter API" : {
+        "prefix" : "filter",
+        "body" : [
+            "${1:Variable} = ${2:ModelName}.objects.filter(${3:PassArguments})",
+            "${0}"
+        ],
+        "description" : "Filter API"
+    },
+    "Get API" : {
+        "prefix" : "get",
+        "body" : [
+            "${1:Variable} = ${2:ModelName}.objects.get(${3:PassArguments})",
+            "${0}"
+        ],
+        "description" : "Get API"
+    },
+    "Exclude API" : {
+        "prefix" : "exclude",
+        "body" : [
+            "${1:Variable} = ${2:ModelName}.objects.exclude(${3:PassArguments})",
+            "${0}"
+        ],
+        "description" : "Exclude API"
+    },
+    "Get_Or_Create API" : {
+        "prefix" : ["get_or_create","goc"],
+        "body" : [
+            "${1:Variable}, ${2:Created} = ${3:ModelName}.objects.get_or_create(${4:PassArguments})",
+            "${0}"
+        ],
+        "description" : "Get Or Create API"
+    },
+    "Update_Or_Create API" : {
+        "prefix" : ["update_or_create","uoc"],
+        "body" : [
+            "${1:Variable}, ${2:Created} = ${3:ModelName}.objects.update_or_create(${4:PassArguments})",
+            "${0}"
+        ],
+        "description" : "Update Or Create API"
+    },
+    "Count API" : {
+        "prefix" : "count",
+        "body" : [
+            "${1:Variable} = ${2:ModelName}.objects.count(${3:PassArguments})",
+            "${0}"
+        ],
+        "description" : "Count API"
+    },
+    "Latest API" : {
+        "prefix" : "latest",
+        "body" : [
+            "${1:Variable} = ${2:ModelName}.objects.latest(${3:PassArguments})",
+            "${0}"
+        ],
+        "description" : "Latest API"
+    },
+    "Earliest API" : {
+        "prefix" : "earliest",
+        "body" : [
+            "${1:Variable} = ${2:ModelName}.objects.earliest(${3:PassArguments})",
+            "${0}"
+        ],
+        "description" : "Earliest API"
+    },
+    "Function View Generic" : {
+        "prefix" : ["fbvbase", "genfunc"],
+        "body" : [
+            "def ${1:FunctionName}(request):",
+            "",
+            "   if request.method == 'POST':",
+            "       ${2:pass}",
+            "",
+            "   if request.method == 'GET':",
+            "       ${3:pass}",
+            "",
+            "${0}"
+        ],
+        "desription" : "Function Based Generic View"
     }
 }
