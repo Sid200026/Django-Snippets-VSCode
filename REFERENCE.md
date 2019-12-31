@@ -33,7 +33,7 @@
 |            3.            | **is_valid()** |        Override is_valid()     |
 |            4.            |   **modform**  |         Setup modelForm        |
 
-#### Form fields are similar to model fields. However the only difference is we have a f as the starting character of each snippet
+#### Form fields are similar to model fields. However the only difference is we have a f as the starting character of each snippet. So formfield snippet becomes fformfield and so on.
 
 ## View Snippets
 
