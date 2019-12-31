@@ -223,7 +223,7 @@
         "description" : "ModelForm Setup"
     },
     "Django Form BoolField" : {
-        "prefix" : "fboolform",
+        "prefix" : "fboolfield",
         "body" : [
             "${1:fieldName} = forms.BooleanField(${2})",
             "${0}"
@@ -231,7 +231,7 @@
         "description" : "BoolField Form"
     },
     "Django Form CharField" : {
-        "prefix" : "fcharform",
+        "prefix" : "fcharfield",
         "body" : [
             "${1:fieldName} = forms.CharField(${2})",
             "${0}"
