@@ -1,1 +1,138 @@
-{}
+{
+    "Django Model Class Setup" : {
+        "prefix" : "modclass",
+        "body" : [
+            "class ${1:ClassName}(models.Model):",
+            "   ${0:Fields}"
+        ],
+        "description" : "Model Class Setup"
+    },
+    "Django Model CharField" : {
+        "prefix" : "charfield",
+        "body" : [
+            "${1:fieldName} = models.CharField(max_length = ${2:150})",
+            "${0}" 
+        ],
+        "description" : "CharField Model"
+    },
+    "Django Model IntField" : {
+        "prefix" : "intfield",
+        "body" : [
+            "${1:fieldName} = models.IntegerField()",
+            "${0}" 
+        ],
+        "description" : "IntegerField Model"
+    },
+    "Django Model BoolField" : {
+        "prefix" : "boolfield",
+        "body" : [
+            "${1:fieldName} = models.BooleanField()",
+            "${0}" 
+        ],
+        "description" : "BooleanField Model"
+    },
+    "Django Date Field" : {
+        "prefix" : "datefield",
+        "body" : [
+            "${1:fieldName} = models.DateField(auto_now=${2:False}, auto_now_add=${3:False})",
+            "${0}"
+        ],
+        "description" : "DateField Model"
+    },
+    "Django DateTime Field" : {
+        "prefix" : "dtfield",
+        "body" : [
+            "${1:fieldName} = models.DateTimeField(auto_now=${2:False}, auto_now_add=${3:False})",
+            "${0}"
+        ],
+        "description" : "DateTimeField Model"
+    },
+    "Django Decimal Field" : {
+        "prefix" : "decimalfield",
+        "body" : [
+            "${1:fieldName} = models.DecimalField(max_digits=${2:None}, decimal_places=${3:None})",
+            "${0}"
+        ],
+        "description" : "DecimalField Model"
+    },
+    "Django Email Field" : {
+        "prefix" : "emailfield",
+        "body" : [
+            "${1:fieldName} = models.EmailField(max_length=%{2:254})",
+            "${0}"
+        ],
+        "description" : "EmailField Model"
+    },
+    "Django File Field" : {
+        "prefix" : "filefield",
+        "body" : [
+            "${1:fieldName} = models.FileField(upload_to=${2:None}, max_length = ${3:100})",
+            "${0}"
+        ],
+        "description" : "FileField Model"
+    },
+    "Django Image Field" : {
+        "prefix" : "imagefield",
+        "body" : [
+            "${1:fieldName} = models.ImageField(upload_to=${2:None}, height_field=${3:None}, width_field=${4:None}, max_length=${5:100})",
+            "${0}"
+        ],
+        "description" : "ImageField Model"
+    },
+    "Django Float Field" : {
+        "prefix" : "floatfield",
+        "body" : [
+            "${1:fieldName} = models.FloatField()",
+            "${0}"
+        ],
+        "description" : "FloatField Model"
+    },
+    "Django Slug Field" : {
+        "prefix" : "slugfield",
+        "body" : [
+            "${1:fieldName} = models.SlugField(max_length = ${2:50})",
+            "${0}"
+        ],
+        "description" : "SlugField Model"
+    },
+    "Django Text Field" : {
+        "prefix" : "textfield",
+        "body" : [
+            "${1:fieldName} = models.TextField()",
+            "${0}"
+        ],
+        "description" : "TextField Model"
+    },
+    "Django Time Field" : {
+        "prefix" : "timefield",
+        "body" : [
+            "${1:fieldName} = models.TimeField(auto_now=${2:False}, auto_now_add=${3:False})",
+            "${0}"
+        ],
+        "description" : "TimeField Model"
+    },
+    "Django URL Field" : {
+        "prefix" : "urlfield",
+        "body" : [
+            "${1:fieldName} = models.URLField(max_length = ${2:200})",
+            "${0}"
+        ],
+        "description" : "URLField Model"
+    },
+    "Django ForeignKey Field" : {
+        "prefix" : ["foreignkeyfield", "fkfield"],
+        "body" : [
+            "${1:fieldName} = models.ForeignKey(${2:RelatedModel}, on_delete=${3:models.CASCADE})",
+            "${0}"
+        ],
+        "description" : "ForeignKeyField Model"
+    },
+    "Django ManyToMany Field" : {
+        "prefix" : ["manytomanyfield", "m2mfield", "mtmfield"],
+        "body" : [
+            "${1:fieldName} = models.ManyToManyField(${2:RelatedModel})",
+            "${0}"
+        ],
+        "description" : "ManyToManyField Model"
+    }
+}
