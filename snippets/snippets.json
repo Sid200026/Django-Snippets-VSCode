@@ -347,13 +347,11 @@
         "body" : [
             "class ${1:ViewName}(View):",
             "",
-            "   def get(self,request):",
+            "   def post(self, request):",
             "       ${2:pass}",
             "",
-            "   def post(self, request):",
-            "       ${3:pass}",
-            "",
-            "${0}"
+            "   def get(self,request):",
+            "       ${0:pass}"
         ],
         "description" : "Django Base View"
     },
