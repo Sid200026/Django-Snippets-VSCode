@@ -1,0 +1,20 @@
+{
+    "name": "django-snippets",
+    "displayName": "Django Snippets",
+    "description": "Code Snippets for the web-based Python framework Django",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "python",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
