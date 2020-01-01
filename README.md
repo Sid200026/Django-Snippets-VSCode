@@ -118,12 +118,10 @@ Currently no issue has been reported. All issues must be reported at
 
 [Issues](https://github.com/Sid200026/Django-Snippets-VSCode/issues)
 
-## Release Notes
+## Current Release
 
-### 1.0.0
-#### First Release of the django-snippets extension
-
-Initial release of snippets for Django
+### 0.0.3
+#### Initial Release of the django-snippets extension
 
 -----------------------------------------------------------------------------------------------------------
 

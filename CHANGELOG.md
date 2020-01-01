@@ -8,6 +8,13 @@ All notable changes to the "django-snippets" extension will be documented in thi
 - Add support for graphene Django
 - Add support for Django Rest Framework
 
+### v0.0.3
+
+- Fixed Directory
+
+### v0.0.2
+
+- Updated CHANGELOG
 
 ### v0.0.1
 
