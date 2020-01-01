@@ -120,7 +120,7 @@ Currently no issue has been reported. All issues must be reported at
 
 ## Current Release
 
-### 0.0.3
+### 0.0.4
 #### Initial Release of the django-snippets extension
 
 -----------------------------------------------------------------------------------------------------------
