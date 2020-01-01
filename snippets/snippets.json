@@ -3,7 +3,7 @@
         "prefix" : "modclass",
         "body" : [
             "class ${1:ClassName}(models.Model):",
-            "   ${0:Fields}"
+            "    ${0:Fields}"
         ],
         "description" : "Model Class Setup"
     },
@@ -160,7 +160,7 @@
             "app_name = ${2:AppName}",
             "",
             "urlpatterns = [",
-            "   ${0}",
+            "    ${0}",
             "]"
         ],
         "description" : "urls.py file setup"
@@ -171,7 +171,7 @@
             "from django.db.models import Manager",
             "",
             "class ${1:ManagerName}(Manager):",
-            "   ${0}"
+            "    ${0}"
         ],
         "description" : "Custom Manager Class Setup"
     },
@@ -195,7 +195,7 @@
         "prefix" : ["formclass", "fclass"],
         "body" : [
             "class ${1:FormName}(forms.Form):",
-            "   ${0:Fields}"
+            "    ${0:Fields}"
         ],
         "description" : "Form Class Setup"
     },
@@ -203,11 +203,11 @@
         "prefix" : ["is_valid()", "validcustom"],
         "body" : [
             "def is_valid(self):",
-            "   valid = super().is_valid()",
-            "   if not valid:",
-            "       return False",
-            "   ${1:# Custom Logic}",
-            "   return True",
+            "    valid = super().is_valid()",
+            "    if not valid:",
+            "        return False",
+            "    ${1:# Custom Logic}",
+            "    return True",
             "${0}"
         ],
         "description" : "Override is_valid() method"
@@ -216,9 +216,9 @@
         "prefix" : ["modform", "modelform"],
         "body" : [
             "class ${1:FormName}(forms.ModelForm):",
-            "   class Meta:",
-            "       model = ${2:ModelName}",
-            "       fields = [${0:Model Fields}]"
+            "    class Meta:",
+            "        model = ${2:ModelName}",
+            "        fields = [${0:Model Fields}]"
         ],
         "description" : "ModelForm Setup"
     },
@@ -347,11 +347,11 @@
         "body" : [
             "class ${1:ViewName}(View):",
             "",
-            "   def post(self, request):",
-            "       ${2:pass}",
+            "    def post(self, request):",
+            "        ${2:pass}",
             "",
-            "   def get(self,request):",
-            "       ${0:pass}"
+            "    def get(self,request):",
+            "        ${0:pass}"
         ],
         "description" : "Django Base View"
     },
@@ -388,7 +388,7 @@
             "",
             "@register.filter(name=${1:FilterName})",
             "def ${2:${1}}(value, arg=None):",
-            "   ${0}"
+            "    ${0}"
         ],
         "description" : "Custom Filter"
     },
@@ -477,14 +477,55 @@
         "body" : [
             "def ${1:FunctionName}(request):",
             "",
-            "   if request.method == 'POST':",
-            "       ${2:pass}",
+            "    if request.method == 'POST':",
+            "        ${2:pass}",
             "",
-            "   if request.method == 'GET':",
-            "       ${3:pass}",
+            "    if request.method == 'GET':",
+            "        ${3:pass}",
             "",
             "${0}"
         ],
         "desription" : "Function Based Generic View"
+    },
+    "Create User" : {
+        "prefix" : ["usercreate", "createuser"],
+        "body" : [
+            "user = Users.objects.create_user(username=${1:username}, password=${2:password}${3})",
+            "${0}"
+        ],
+        "description" : ["Create new user instance"]
+    },
+    "Validate Password" : {
+        "prefix" : "validatepassword",
+        "body" : [
+            "validate_password(${1:password}, user=${2:None})",
+            "${0}"
+        ],
+        "description" : "Validate Password"
+    },
+    "Set Password" : {
+        "prefix" : "setpassword",
+        "body" : [
+            "${1:user}.set_password(${2:password})",
+            "${0}"
+        ],
+        "description" : "Set Password"
+    },
+    "Authenticate User" : {
+        "prefix" : ["authuser", "authenticateuser"],
+        "body" : [
+            "${1:user} = authenticate(username=${2:username}, password=${3:password})",
+            "if ${1}:",
+            "    ${0:# User is authenticated}"
+        ],
+        "description" : "Authenticate User"
+    },
+    "Check Authentication" : {
+        "prefix" : "checkauth",
+        "body" : [
+            "if ${1:user}.is_authenticated():",
+            "    ${0:# User is authenticated}"
+        ],
+        "description" : "Check Authentication"
     }
 }

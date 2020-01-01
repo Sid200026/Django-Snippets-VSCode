@@ -12,8 +12,20 @@
 |            2.            | **charfield**  |         Model CharField        |
 |            3.            |  **intfield**  |         Model IntField         |
 |            4.            |  **boolfield** |         Model BoolField        |
-
-#### All other fields and snippet shortcuts are self-explanatory.
+|            5.            |  **datefield** |         Model DateField        |
+|            6.            |   **dtfield**  |       Model DateTimeField      |
+|            7.            |**decimalfield**|        Model DecimalField      |
+|            8.            | **emailfield** |         Model EmailField       |
+|            9.            | **filefield**  |         Model FileField        |
+|            10.           | **imagefield** |         Model ImageField       |
+|            11.           | **floatfield** |         Model FloatField       |
+|            12.           |  **slugfield** |         Model SlugField        |
+|            13.           | **textfield**  |         Model TextField        |
+|            14.           |  **timefield** |         Model TimeField        |
+|            15.           |  **urlfield**  |          Model URLField        |
+|            16.           |   **fkfield**  |     Model ForeignKey Field     |
+|            17.           |  **m2mfield**  |     Model ManyToMany Field     |
+|            18.           |  **otofield**  |      Model OneToOne Field      |
 
 ## Admin, URLs and Manager Snippets
 
@@ -26,14 +38,29 @@
 
 ## Form Snippets
 
-|          **No.**         |   **Snippet**  |           **Function**         |
-|:------------------------:|:--------------:|:------------------------------:|
-|            1.            |   **formpy**   |          Setup form.py         |
-|            2.            |   **fclass**   |         Setup form class       |
-|            3.            | **is_valid()** |        Override is_valid()     |
-|            4.            |   **modform**  |         Setup modelForm        |
+|          **No.**         |   **Snippet**   |           **Function**         |
+|:------------------------:|:---------------:|:------------------------------:|
+|            1.            |   **formpy**    |          Setup form.py         |
+|            2.            |   **fclass**    |         Setup form class       |
+|            3.            | **is_valid()**  |        Override is_valid()     |
+|            4.            |**fchoicefield** |         Form ChoiceField       |
+|            5.            |  **fmcfield**   |    Form MultipleChoiceField    |
+|            6.            | **fcharfield**  |          Form CharField        |
+|            6.            | **fintfield**   |          Form IntField         |
+|            7.            | **fboolfield**  |          Form BoolField        |
+|            8.            | **fdatefield**  |          Form DateField        |
+|            9.            |  **fdtfield**   |        Form DateTimeField      |
+|            10.           |**fdecimalfield**|         Form DecimalField      |
+|            11.           | **femailfield** |          Form EmailField       |
+|            12.           | **ffilefield**  |          Form FileField        |
+|            13.           | **ffloatfield** |          Form FloatField       |
+|            14.           | **fimagefield** |          Form ImageField       |
+|            15.           |  **fslugfield** |          Form SlugField        |
+|            16.           |  **ftimefield** |          Form TimeField        |
+|            15.           |  **furlfield**  |           Form URLField        |
 
-#### Form fields are similar to model fields. However the only difference is we have a f as the starting character of each snippet. So charfield snippet becomes fcharfield, intfield becomes fintfield and so on.
+#### Form field snippet shorcut are similar to model fields shortcuts. However the only difference is we have a `f` as the starting character of each snippet
+
 
 ## View Snippets
 
@@ -55,3 +82,13 @@
 |            11.           |   **latest**   |          *Latest* query          |
 |            12.           |  **earliest**  |         *Earliest* query         |
 |            13.           |   **genfunc**  |   Setup a generic function view  |
+
+## User Model Snippets
+
+|          **No.**         |   **Snippet**            |           **Function**           |
+|:------------------------:|:------------------------:|:--------------------------------:|
+|            1.            |      **createuser**      |    Create a new user instance    |
+|            2.            |   **validatepassword**   |     Validate a given password    |
+|            3.            |     **setpassword**      |         Set a new password       |
+|            4.            |       **authuser**       |        Authenticate a user       |
+|            5.            |       **checkauth**      |  Check if a user is authenticate |
