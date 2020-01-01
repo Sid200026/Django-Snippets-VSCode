@@ -2,8 +2,13 @@
 
 All notable changes to the "django-snippets" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
 ## [Unreleased]
 
-- Initial release
+- Add class based view templates
+- Add support for graphene Django
+- Add support for Django Rest Framework
+
+
+### v0.0.1
+
+- Initial Release of Django Snippets
