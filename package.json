@@ -27,6 +27,11 @@
     "categories": [
         "Snippets"
     ],
+    "icon" : "static/django.png",
+    "galleryBanner" : {
+        "color": "#213807",
+        "theme": "dark"
+    },
     "contributes": {
         "snippets": [
             {
