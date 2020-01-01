@@ -2,9 +2,27 @@
     "name": "django-snippets",
     "displayName": "Django Snippets",
     "description": "Code Snippets for the web-based Python framework Django",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Sid200026/Django-Snippets-VSCode"
+    },
+    "keywords" : [
+        "Django",
+        "DjangoPython",
+        "Python",
+        "snippets",
+        "django codes"
+    ],
     "version": "0.0.1",
+    "publisher": "Sid200026",
     "engines": {
         "vscode": "^1.41.0"
+    },
+    "license": "SEE LICENSE IN LICENSE",
+    "homepage": "https://github.com/Sid200026/Django-Snippets-VSCode/blob/master/README.md",
+    "bugs": {
+        "url": "https://github.com/Sid200026/Django-Snippets-VSCode/issues",
+        "email": "siddharthsingharoy@gmail.com"
     },
     "categories": [
         "Snippets"
