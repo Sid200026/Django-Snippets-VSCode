@@ -61,6 +61,7 @@
 
 #### Form field snippet shorcut are similar to model fields shortcuts. However the only difference is we have a `f` as the starting character of each snippet
 
+
 ## View Snippets
 
 |          **No.**         |   **Snippet**  |           **Function**           |
